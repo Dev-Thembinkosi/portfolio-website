@@ -2,10 +2,20 @@ import Image from "next/image";
 import memoJiImage from "@/assets/images/memoji-computer.png";
 
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import grainImage from "@/assets/images/grain.jpg"
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48">
+    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      <div className="absolute inset-0 -z-30 opacity-5" style={{
+        backgroundImage: `url(${grainImage.src})`
+      }}></div>
+
+      <div className="hero-ring size-[620px]"></div>
+      <div className="hero-ring size-[820px]"></div>
+      <div className="hero-ring size-[1020px]"></div>
+      <div className="hero-ring size-[1220px]"></div>
+      
       <div className="container">
         <div className="flex flex-col items-center">
           <Image className="size-[100px]" src={memoJiImage} alt="" />
