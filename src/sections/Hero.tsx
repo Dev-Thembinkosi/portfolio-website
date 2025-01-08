@@ -5,6 +5,7 @@ import StarIcon from "@/assets/icons/star.svg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import { HeroObit } from "@/components/HeroObit";
+import SparkleIcon from "@/assets/icons/sparkle.svg"
 
 export const HeroSection = () => {
   return (
@@ -27,6 +28,24 @@ export const HeroSection = () => {
 
       <HeroObit size={590} rotation={98}>
         <StarIcon className="size-8 text-emerald-300" />
+      </HeroObit>
+
+
+      <HeroObit size={430} rotation={-14}>
+        <SparkleIcon className="size-8 text-emerald-300/20" />
+      </HeroObit>
+
+      <HeroObit size={440} rotation={79}>
+        <SparkleIcon className="size-5 text-emerald-300/20" />
+      </HeroObit>
+
+
+      <HeroObit size={530} rotation={178}>
+        <SparkleIcon className="size-10 text-emerald-300/20" />
+      </HeroObit>
+
+      <HeroObit size={710} rotation={144}>
+        <SparkleIcon className="size-14 text-emerald-300/20" />
       </HeroObit>
 
       <div className="hero-ring size-[620px]"></div>
