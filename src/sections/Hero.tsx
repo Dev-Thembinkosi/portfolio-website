@@ -48,6 +48,19 @@ export const HeroSection = () => {
         <SparkleIcon className="size-14 text-emerald-300/20" />
       </HeroObit>
 
+
+      <HeroObit size={720} rotation={85}>
+        <div className="size-3 bg-emerald-300/20 rounded-full" />
+      </HeroObit>
+
+      <HeroObit size={520} rotation={-41}>
+        <div className="size-2 bg-emerald-300/20 rounded-full" />
+      </HeroObit>
+
+      <HeroObit size={650} rotation={-5}>
+        <div className="size-2 bg-emerald-300/20 rounded-full" />
+      </HeroObit>
+
       <div className="hero-ring size-[620px]"></div>
       <div className="hero-ring size-[820px]"></div>
       <div className="hero-ring size-[1020px]"></div>
