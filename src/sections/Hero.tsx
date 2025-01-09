@@ -5,69 +5,64 @@ import StarIcon from "@/assets/icons/star.svg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import { HeroObit } from "@/components/HeroObit";
-import SparkleIcon from "@/assets/icons/sparkle.svg"
+import SparkleIcon from "@/assets/icons/sparkle.svg";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:58 relative z-0 overflow-x-clip">
-      <div
-        className="absolute inset-0 -z-30 opacity-5"
-        style={{
-          backgroundImage: `url(${grainImage.src})`,
-        }}
-      ></div>
+    <div className="py-32 md:py-48 lg:py-58 relative z-0 overflow-x-clip">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+        <div
+          className="absolute inset-0 -z-30 opacity-5"
+          style={{
+            backgroundImage: `url(${grainImage.src})`,
+          }}
+        ></div>
 
-      <HeroObit size={800} rotation={-72}>
-        <StarIcon className="size-28 text-emerald-300" />
-      </HeroObit>
+        <HeroObit size={800} rotation={-72}>
+          <StarIcon className="size-28 text-emerald-300/30" />
+        </HeroObit>
 
+        <HeroObit size={550} rotation={20}>
+          <StarIcon className="size-12 text-emerald-300" />
+        </HeroObit>
 
-      <HeroObit size={550} rotation={20}>
-        <StarIcon className="size-12 text-emerald-300" />
-      </HeroObit>
+        <HeroObit size={590} rotation={98}>
+          <StarIcon className="size-8 text-emerald-300" />
+        </HeroObit>
 
-      <HeroObit size={590} rotation={98}>
-        <StarIcon className="size-8 text-emerald-300" />
-      </HeroObit>
+        <HeroObit size={430} rotation={-14}>
+          <SparkleIcon className="size-8 text-emerald-300/20" />
+        </HeroObit>
 
+        <HeroObit size={440} rotation={79}>
+          <SparkleIcon className="size-5 text-emerald-300/20" />
+        </HeroObit>
 
-      <HeroObit size={430} rotation={-14}>
-        <SparkleIcon className="size-8 text-emerald-300/20" />
-      </HeroObit>
+        <HeroObit size={530} rotation={178}>
+          <SparkleIcon className="size-10 text-emerald-300/20" />
+        </HeroObit>
 
-      <HeroObit size={440} rotation={79}>
-        <SparkleIcon className="size-5 text-emerald-300/20" />
-      </HeroObit>
+        <HeroObit size={710} rotation={144}>
+          <SparkleIcon className="size-14 text-emerald-300/20" />
+        </HeroObit>
 
+        <HeroObit size={720} rotation={85}>
+          <div className="size-3 bg-emerald-300/20 rounded-full" />
+        </HeroObit>
 
-      <HeroObit size={530} rotation={178}>
-        <SparkleIcon className="size-10 text-emerald-300/20" />
-      </HeroObit>
+        <HeroObit size={520} rotation={-41}>
+          <div className="size-2 bg-emerald-300/20 rounded-full" />
+        </HeroObit>
 
-      <HeroObit size={710} rotation={144}>
-        <SparkleIcon className="size-14 text-emerald-300/20" />
-      </HeroObit>
+        <HeroObit size={650} rotation={-5}>
+          <div className="size-2 bg-emerald-300/20 rounded-full" />
+        </HeroObit>
 
-
-      <HeroObit size={720} rotation={85}>
-        <div className="size-3 bg-emerald-300/20 rounded-full" />
-      </HeroObit>
-
-      <HeroObit size={520} rotation={-41}>
-        <div className="size-2 bg-emerald-300/20 rounded-full" />
-      </HeroObit>
-
-      <HeroObit size={650} rotation={-5}>
-        <div className="size-2 bg-emerald-300/20 rounded-full" />
-      </HeroObit>
-
-      <div className="hero-ring size-[620px]"></div>
-      <div className="hero-ring size-[820px]"></div>
-      <div className="hero-ring size-[1020px]"></div>
-      <div className="hero-ring size-[1220px]"></div>
-
-      
-      
+        <div className="hero-ring size-[620px]"></div>
+        <div className="hero-ring size-[820px]"></div>
+        <div className="hero-ring size-[1020px]"></div>
+        <div className="hero-ring size-[1220px]"></div>
+      </div>
 
       <div className="container">
         <div className="flex flex-col items-center">
