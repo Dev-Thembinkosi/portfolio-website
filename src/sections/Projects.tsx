@@ -51,18 +51,28 @@ export const ProjectsSection = () => {
             Real-world Results
           </p>
         </div>
-        <h2 className="font-serif text-3xl text-center mt-6">Featured Projects</h2>
-        <p className="text-center text-white mt-4">See how i transformed concepts into engaging digital experiences.</p>
+        <h2 className="font-serif text-3xl text-center mt-6">
+          Featured Projects
+        </h2>
+        <p className="text-center text-white mt-4">
+          See how i transformed concepts into engaging digital experiences.
+        </p>
 
         <div className="flex flex-col mt-10">
           {portfolioProjects.map((project) => {
             return (
-              <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20">
-                <div>
-                  <span>{project.company}</span>
-                  <span>{project.year}</span>
+              <div
+                key={project.title}
+                className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 p-8"
+              >
+                <div className="flex">
+                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                    <span>{project.company}</span>
+                    <span>&bull;</span>
+                    <span>{project.year}</span>
+                  </div>
                 </div>
-                <h3>{project.title}</h3>
+                <h3 className="font-serif">{project.title}</h3>
                 <hr />
                 <ul>
                   {project.results.map((result) => (
