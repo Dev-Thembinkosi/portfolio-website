@@ -13,6 +13,7 @@ import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
+import { ToolboxItems } from "@/components/ToolboxItems";
 
 const toolboxItems = [
   {
@@ -21,7 +22,7 @@ const toolboxItems = [
   },
 
   {
-    title: "JavaScript",
+    title: "HTML5",
     iconType: HTMLIcon,
   },
   {
@@ -99,31 +100,23 @@ export const AboutSection = () => {
             </div>
           </Card>
 
-          <Card>
-            <div>
-              <StarIcon />
-              <CardHeader
-                title="My Toolbox"
-                description="Explore the technologies and tools i use to build exceptional digital experiences."
-              />
-            </div>
-            <div>
-              {toolboxItems.map((item) => (
-                <div key={item.title}>
-                  <TechIcon component={item.iconType} />
-                  <span>{item.title}</span>
-                </div>
-              ))}
-            </div>
+          <Card className="h-[320px] p-0">
+            <CardHeader
+              title="My Toolbox"
+              description="Explore the technologies and tools i use to build exceptional digital experiences."
+              className="px-6 pt-6"
+            />
+
+
+            <ToolboxItems items={toolboxItems} className="mt-6"/>
+            <ToolboxItems items={toolboxItems} className="mt-6"/>
+            
           </Card>
           <Card>
-
-
-          <CardHeader
-                title="Beyond the code"
-                description="Explore my interest and hobbies beyond the code."
-              />
-            
+            <CardHeader
+              title="Beyond the code"
+              description="Explore my interest and hobbies beyond the code."
+            />
 
             <div>
               {hobbies.map((hobby) => (
