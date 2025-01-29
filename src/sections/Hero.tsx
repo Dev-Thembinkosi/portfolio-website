@@ -69,10 +69,10 @@ export const HeroSection = () => {
           <Image className="size-[100px]" src={memoJiImage} alt="" />
 
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full"> </div>
-            <div className="text-sm font-medium">
-              Available for Work
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="absolute animate-ping-large bg-green-500 size-2.5 inset-0 rounded-full"></div>
             </div>
+            <div className="text-sm font-medium">Available for Work</div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
