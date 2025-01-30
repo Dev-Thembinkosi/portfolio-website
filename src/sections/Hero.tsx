@@ -18,44 +18,50 @@ export const HeroSection = () => {
           }}
         ></div>
 
-        <HeroObit size={800} rotation={-72}>
-          <StarIcon className="size-28 text-emerald-300/30" />
-        </HeroObit>
+        {/* size: number;
+          rotation: number;
+          orbitDuration?: string;
+          spinDuration?: string;
+          shouldSpin?: boolean;
+          shouldOrbit?: boolean; */}
 
-        <HeroObit size={550} rotation={20}>
-          <StarIcon className="size-12 text-emerald-300" />
-        </HeroObit>
-
-        <HeroObit size={590} rotation={98}>
-          <StarIcon className="size-8 text-emerald-300" />
-        </HeroObit>
-
-        <HeroObit size={430} rotation={-14}>
+        <HeroObit size={430} rotation={-14} shouldOrbit orbitDuration="30s">
           <SparkleIcon className="size-8 text-emerald-300/20" />
         </HeroObit>
 
-        <HeroObit size={440} rotation={79}>
+        <HeroObit size={440} rotation={79} shouldOrbit orbitDuration="32s">
           <SparkleIcon className="size-5 text-emerald-300/20" />
         </HeroObit>
 
-        <HeroObit size={530} rotation={178}>
+        <HeroObit size={520} rotation={-41} shouldOrbit orbitDuration="34s">
+          <div className="size-2 bg-emerald-300/20 rounded-full" />
+        </HeroObit>
+
+        <HeroObit size={530} rotation={178} shouldOrbit orbitDuration="36s">
           <SparkleIcon className="size-10 text-emerald-300/20" />
         </HeroObit>
 
-        <HeroObit size={710} rotation={144}>
+        <HeroObit size={550} rotation={20} shouldOrbit orbitDuration="38s">
+          <StarIcon className="size-12 text-emerald-300" />
+        </HeroObit>
+
+        <HeroObit size={590} rotation={98} shouldOrbit orbitDuration="40s">
+          <StarIcon className="size-8 text-emerald-300" />
+        </HeroObit>
+        <HeroObit size={650} rotation={-5} shouldOrbit orbitDuration="42s">
+          <div className="size-2 bg-emerald-300/20 rounded-full" />
+        </HeroObit>
+
+        <HeroObit size={710} rotation={144} shouldOrbit orbitDuration="44s">
           <SparkleIcon className="size-14 text-emerald-300/20" />
         </HeroObit>
 
-        <HeroObit size={720} rotation={85}>
+        <HeroObit size={720} rotation={85} shouldOrbit orbitDuration="46s">
           <div className="size-3 bg-emerald-300/20 rounded-full" />
         </HeroObit>
 
-        <HeroObit size={520} rotation={-41}>
-          <div className="size-2 bg-emerald-300/20 rounded-full" />
-        </HeroObit>
-
-        <HeroObit size={650} rotation={-5}>
-          <div className="size-2 bg-emerald-300/20 rounded-full" />
+        <HeroObit size={800} rotation={-72} shouldOrbit orbitDuration="48s">
+          <StarIcon className="size-28 text-emerald-300/30" />
         </HeroObit>
 
         <div className="hero-ring size-[620px]"></div>
