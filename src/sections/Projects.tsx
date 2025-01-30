@@ -56,11 +56,14 @@ export const ProjectsSection = () => {
         
 
         <div className="flex md:mt-20  flex-col mt-10 gap-20">
-          {portfolioProjects.map((project) => {
+          {portfolioProjects.map((project, projectIndex) => {
             return (
               <Card
                 key={project.title}
-                className="px-8 md:px-10 pb-0 lg:px-20 lg:pt-16 pt-8 md:pt-12"
+                className="px-8 md:px-10 pb-0 lg:px-20 lg:pt-16 pt-8 md:pt-12 sticky"
+                style={{
+                  top: `calc(64px + ${projectIndex*40}px`
+                }}
               >
                
 
